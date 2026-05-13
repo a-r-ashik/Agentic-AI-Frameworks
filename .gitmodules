@@ -1,0 +1,12 @@
+[submodule "langchain"]
+	path = langchain
+	url = https://github.com/a-r-ashik/LangChain
+[submodule "langgraph"]
+	path = langgraph
+	url = https://github.com/a-r-ashik/LangGraph
+[submodule "crew-ai"]
+	path = crew-ai
+	url = https://github.com/a-r-ashik/Crew-AI
+[submodule "streamlit"]
+	path = streamlit
+	url = https://github.com/a-r-ashik/Started_with_Streamlit
