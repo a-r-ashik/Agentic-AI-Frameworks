@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🤖 Agentic-AI-Frameworks
+#  Agentic-AI-Frameworks
 
 ### A curated collection of production-grade Agentic AI implementations across LangGraph, CrewAI, LangChain, Streamlit & Google ADK
 
