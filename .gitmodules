@@ -10,3 +10,6 @@
 [submodule "streamlit"]
 	path = streamlit
 	url = https://github.com/a-r-ashik/Started_with_Streamlit
+[submodule "google-adk"]
+	path = google-adk
+	url = https://github.com/a-r-ashik/Google-ADK
