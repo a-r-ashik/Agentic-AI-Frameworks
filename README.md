@@ -18,7 +18,7 @@
 
 ---
 
-## 📌 Table of Contents
+##  Table of Contents
 
 - [Overview](#-overview)
 - [Framework Comparison](#-framework-comparison)
@@ -34,7 +34,7 @@
 
 ---
 
-## 🔍 Overview
+##  Overview
 
 **Agentic-AI-Frameworks** is a systematic exploration of the modern agentic AI ecosystem. Each project in this collection tackles a different architectural challenge — from stateful graph-based agent workflows and multi-agent collaboration pipelines to LLM chain fundamentals and interactive AI-powered UIs.
 
@@ -51,7 +51,7 @@ Agentic-AI-Frameworks/
 
 ---
 
-## 📊 Framework Comparison
+##  Framework Comparison
 
 | Feature | LangGraph | CrewAI | LangChain | Streamlit | Google ADK |
 |---|---|---|---|---|---|
@@ -66,11 +66,11 @@ Agentic-AI-Frameworks/
 
 ---
 
-## 📁 Project Index
+##  Project Index
 
 ---
 
-### 1. 🔗 LangChain
+### 1.  LangChain
 
 > **The foundation — LLM chains, prompt engineering, tools, and retrieval primitives.**
 
@@ -82,10 +82,10 @@ A structured learning repository covering LangChain's core building blocks. From
 
 ```mermaid
 flowchart LR
-    A[💬 User Input] --> B[Prompt Template\nStructured prompts]
+    A[ User Input] --> B[Prompt Template\nStructured prompts]
     B --> C[LLM\nOpenAI · Gemini · Groq]
     C --> D[Output Parser\nString · JSON · Pydantic]
-    D --> E[✅ Structured Output]
+    D --> E[ Structured Output]
 
     C -->|Tool call| F[Tools\nSearch · Calculator · APIs]
     F --> C
@@ -105,7 +105,7 @@ flowchart LR
 
 ---
 
-### 2. 🔷 LangGraph
+### 2.  LangGraph
 
 > **Graph-based agent orchestration — the most powerful way to build stateful, cyclical AI workflows.**
 
@@ -153,7 +153,7 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    U[💬 User Query] --> S[Supervisor Agent\nRouting LLM]
+    U[ User Query] --> S[Supervisor Agent\nRouting LLM]
 
     S -->|Research needed| R[Researcher Agent]
     S -->|Code needed| C[Coder Agent]
@@ -163,7 +163,7 @@ flowchart TD
     C --> S
     A --> S
 
-    S -->|Task complete| END[✅ Final Answer]
+    S -->|Task complete| END[ Final Answer]
 
     style S fill:#2D9CDB,color:#fff
     style R fill:#7C3AED,color:#fff
@@ -177,7 +177,7 @@ flowchart TD
 
 ---
 
-### 3. ✈️ Google ADK
+### 3.  Google ADK
 
 > **Google's native agent platform — a hierarchical multi-agent travel planner powered by Gemini, Google Search, and OpenStreetMap.**
 
@@ -189,22 +189,22 @@ A production-grade multi-agent travel planning system built with **Google Agent 
 
 ```mermaid
 flowchart TD
-    U["👤 User\nNatural language query"] --> TP
+    U[" User\nNatural language query"] --> TP
 
-    TP["🧳 Travel Planner\nRoot Orchestrator\nCannot use tools directly"]
+    TP[" Travel Planner\nRoot Orchestrator\nCannot use tools directly"]
 
     TP -->|delegates to| TIA
 
-    TIA["💡 Travel Inspiration Agent\nCore reasoning agent\nInspires · Identifies · Coordinates"]
+    TIA[" Travel Inspiration Agent\nCore reasoning agent\nInspires · Identifies · Coordinates"]
 
     TIA -->|events & news| NA
     TIA -->|places & locations| PA
 
-    NA["📰 News Agent\nTop 10 travel events\n& news results"]
-    PA["📍 Places Agent\nNearby locations with\nname · address · coordinates"]
+    NA[" News Agent\nTop 10 travel events\n& news results"]
+    PA[" Places Agent\nNearby locations with\nname · address · coordinates"]
 
-    NA -->|uses| GST["🔍 Google Search AgentTool\nADK native google_search grounding\nReal-time web results"]
-    PA -->|uses| LT["🗺️ Places FunctionTool\nfind_nearby_places_open()\nGeopy Nominatim → Overpass API OSM\nFully free · No API key required"]
+    NA -->|uses| GST[" Google Search AgentTool\nADK native google_search grounding\nReal-time web results"]
+    PA -->|uses| LT[" Places FunctionTool\nfind_nearby_places_open()\nGeopy Nominatim → Overpass API OSM\nFully free · No API key required"]
 
     style TP fill:#4285F4,color:#fff
     style TIA fill:#7C3AED,color:#fff
@@ -227,7 +227,7 @@ flowchart TD
 
 ```mermaid
 flowchart LR
-    A[💬 User Query] --> B[Travel Planner\nRoot Agent]
+    A[ User Query] --> B[Travel Planner\nRoot Agent]
     B --> C[Travel Inspiration\nAgent]
 
     C --> D[News Agent]
@@ -238,7 +238,7 @@ flowchart LR
 
     G --> H[Geopy Nominatim\nGeocode location → lat/lon]
     H --> I[Overpass API\nQuery OSM nodes within radius]
-    I --> J[✅ name · address · coords]
+    I --> J[ name · address · coords]
 
     style B fill:#4285F4,color:#fff
     style C fill:#7C3AED,color:#fff
@@ -266,7 +266,7 @@ User: "Find restaurants near Grand Case, Saint Martin"
 
 ---
 
-### 4. 🤝 CrewAI
+### 4.  CrewAI
 
 > **Multi-agent collaboration — specialized agents working in sequence to research and write autonomously.**
 
@@ -278,16 +278,16 @@ A production-style CrewAI project that orchestrates two autonomous AI agents: a 
 
 ```mermaid
 flowchart TD
-    U[💬 User Input\nTopic] --> RG
+    U[ User Input\nTopic] --> RG
 
-    subgraph Crew ["🤝 Sequential Crew Pipeline"]
+    subgraph Crew [" Sequential Crew Pipeline"]
         direction TB
-        RG["📋 Report Generator Agent\nRole: Expert Researcher\nGoal: ~1000-word structured report\nCovers: facts · trends · future outlook"]
-        BW["✍️ Blog Writer Agent\nRole: Expert Blog Writer\nGoal: ~500-word ELI5 blog post\nStyle: Fun · Simple · Accessible"]
+        RG[" Report Generator Agent\nRole: Expert Researcher\nGoal: ~1000-word structured report\nCovers: facts · trends · future outlook"]
+        BW[" Blog Writer Agent\nRole: Expert Blog Writer\nGoal: ~500-word ELI5 blog post\nStyle: Fun · Simple · Accessible"]
         RG -->|Report passed as context| BW
     end
 
-    BW --> OUT[📄 blogs/output.md\nAuto-saved Markdown]
+    BW --> OUT[ blogs/output.md\nAuto-saved Markdown]
 
     style RG fill:#7C3AED,color:#fff
     style BW fill:#2D9CDB,color:#fff
@@ -323,7 +323,7 @@ Generated blog topic: *"AI Engineering Career Path and Opportunities in Banglade
 
 ---
 
-### 5. 🎨 Streamlit
+### 5.  Streamlit
 
 > **Interactive AI-powered web apps — bringing AI backends to life with clean, responsive UIs.**
 
@@ -335,15 +335,15 @@ A collection of three Streamlit applications demonstrating how to build real-tim
 
 ```mermaid
 flowchart TD
-    S[🎨 Streamlit Collection] --> A
+    S[ Streamlit Collection] --> A
     S --> B
     S --> C
 
-    A["📈 AssetPulse\nReal-time stock & crypto tracker\nYahoo Finance API · Interactive charts\nPrice change · % change · Raw data toggle"]
+    A[" AssetPulse\nReal-time stock & crypto tracker\nYahoo Finance API · Interactive charts\nPrice change · % change · Raw data toggle"]
 
-    B["🏋️ BMI Calculator\nWHO obesity classification\nHeight ft/in + Weight kg input\nColour-coded category labels"]
+    B[" BMI Calculator\nWHO obesity classification\nHeight ft/in + Weight kg input\nColour-coded category labels"]
 
-    C["🛸 Mars Lander Game\nBrowser-based physics simulation\nReal-time gravity + thrust mechanics\nPlotly dark-theme · Live telemetry panel\nWin/crash detection · Restart button"]
+    C[" Mars Lander Game\nBrowser-based physics simulation\nReal-time gravity + thrust mechanics\nPlotly dark-theme · Live telemetry panel\nWin/crash detection · Restart button"]
 
     style S fill:#FF4B4B,color:#fff
     style A fill:#2D9CDB,color:#fff
@@ -359,8 +359,8 @@ flowchart LR
     B --> C[Apply Gravity\n+ Thrust]
     C --> D{Altitude\nCheck}
     D -->|Above ground| B
-    D -->|Landing velocity\n< threshold| E[🏆 Safe Landing]
-    D -->|Landing velocity\n> threshold| F[💥 Crash]
+    D -->|Landing velocity\n< threshold| E[ Safe Landing]
+    D -->|Landing velocity\n> threshold| F[ Crash]
     E --> G[Restart?]
     F --> G
     G --> A
@@ -399,12 +399,12 @@ flowchart LR
 flowchart TD
     A["🔗 LangChain\nFoundation layer\nChains · Tools · Prompts · Retrievers"]
 
-    A --> B["🔷 LangGraph\nAdd statefulness & cycles\nGraph workflows · Human-in-loop · Streaming"]
-    A --> C["🤝 CrewAI\nAdd multi-agent roles\nSequential crews · YAML config · Auto output"]
-    A --> D["🎨 Streamlit\nAdd interactive UI\nReal-time apps · User input · Visualization"]
-    A --> E["✈️ Google ADK\nGoogle-native agent platform\nHierarchical agents · Gemini · OSM tools"]
+    A --> B[" LangGraph\nAdd statefulness & cycles\nGraph workflows · Human-in-loop · Streaming"]
+    A --> C[" CrewAI\nAdd multi-agent roles\nSequential crews · YAML config · Auto output"]
+    A --> D[" Streamlit\nAdd interactive UI\nReal-time apps · User input · Visualization"]
+    A --> E[" Google ADK\nGoogle-native agent platform\nHierarchical agents · Gemini · OSM tools"]
 
-    B --> F["🚀 Production Agentic AI\nStateful · Multi-agent · Interactive · Observable"]
+    B --> F[" Production Agentic AI\nStateful · Multi-agent · Interactive · Observable"]
     C --> F
     D --> F
     E --> F
