@@ -375,7 +375,7 @@ flowchart LR
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 | Layer | Technologies |
 |---|---|
@@ -393,7 +393,7 @@ flowchart LR
 
 ---
 
-## 🗺 Agentic AI Evolution Map
+##  Agentic AI Evolution Map
 
 ```mermaid
 flowchart TD
@@ -421,7 +421,7 @@ Each framework is a deliberate step in mastering a different dimension of the ag
 
 ---
 
-## 👤 Author
+##  Author
 
 **Ashikur Rahman**
 
